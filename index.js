@@ -1,4 +1,4 @@
-
+//(asigment 1.0)
 //group1
 const a=7
 const b =5
@@ -62,7 +62,7 @@ console.log(oldNumbersOfTheFam,evenNumsOfTheFamily,pointNumbersOfTheFamily,compo
     compNumbersOfTheFamily,natNumbersOfTheFamily)
 
 
-    //create an objesct of five candidates writing jambe
+    //create an objesct of five candidates writing (jamb assigment 1.1)
 const candidate1={firstNames:"success", lastNames:"George", email:"success@gmail.com",
 phoneNumbers:"0809", address:"#12.Odums",scores:"45",gender:"male",}
 candidate2={
@@ -109,3 +109,31 @@ if(scores<=49){console.log("FAILD")}
 else if(scores<=59) {console.log("Good")}
 else if(scores<=69){console.log("Very Good")}
 else if (scores>=70) {console.log("Excellent")}
+
+
+// Using  arrow functions  with personal details and logicial functions && || write an if statement to check
+//if they made payment ,quiz 1 if statment to 
+//check if they made payment, or if their age is above 16 and
+//check if name contians letter A
+
+const name= "SAMUEL"
+const age=16
+const payment= "check"
+const fees =()=> {
+if( age >=16 && name.includes("A")&& payment)
+ {console.log
+ ("payment been 'checked', your name contains letter 'A' congrats your  'age' is above 15, promoted to grade A")}
+
+ if( age <16||name.includes("A")&&payment)
+ {console.log
+ ("payment been'checked', your name contains letter 'A',though your 'age' is below 16, grace find you your have promoted to grade B")}
+ 
+if( age >16 && name.includes("A")||payment)
+{console.log
+("payment 'checked'though half payment,your name contains letter 'A' your  'age' is above 16, promoted to grade C")}
+}
+fees()
+
+
+
+
