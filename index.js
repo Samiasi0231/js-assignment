@@ -1,3 +1,579 @@
+// return only female gender using map
+const jambtudents=[  
+   {  
+      name:'arun',
+      gender:'Male',
+      physics:88,
+      maths:87,
+      english:78
+   },
+   {  
+      name:'rajesh',
+      gender:'Male',
+      physics:96,
+      maths:100,
+      english:95
+   },
+   {  
+      name:'moorthy',
+      gender:'Male',
+      physics:89,
+      maths:90,
+      english:70
+   },
+   {  
+      name:'raja',
+      gender:'Male',
+      physics:30,
+      maths:25,
+      english:40
+   },
+   {  
+      name:'usha',
+      gender:'Female',
+      physics:67,
+      maths:45,
+      english:78
+   },
+   {  
+      name:'priya',
+      gender:'Female',
+      physics:56,
+      maths:46,
+      english:78
+   },
+   {  
+      name:'Sundar',
+      gender:'Male',
+      physics:12,
+      maths:67,
+      english:67
+   },
+   {  
+      name:'Kavitha',
+      gender:'Female',
+      physics:78,
+      maths:71,
+      english:67
+   },
+   {  
+      name:'Dinesh',
+      gender:'Male',
+      physics:56,
+      maths:45,
+      english:67
+   },
+   {  
+      name:'Hema',
+      gender:'Female',
+      physics:71,
+      maths:90,
+      english:23
+   },
+   {  
+      name:'Gowri',
+      gender:'Female',
+      physics:100,
+      maths:100,
+      english:100
+   },
+   {  
+      name:'Ram',
+      gender:'Male',
+      physics:78,
+      maths:55,
+      english:47
+   },
+   {  
+      name:'Murugan',
+      gender:'Male',
+      physics:34,
+      maths:89,
+      english:78
+   },
+   {  
+      names:'Jenifer',
+      gender:'Female',
+      physics:67,
+      maths:88,
+      english:90
+   }
+ ] 
+ const femaleStudents=jambtudents.map((gender)=>{ return gender.jambtudents="female"
+ })
+ console.log(femaleStudents)
+
+// return male gender only using map
+const jambStudents=[  
+   {  
+      name:'arun',
+      gender:'Male',
+      physics:88,
+      maths:87,
+      english:78
+   },
+   {  
+      name:'rajesh',
+      gender:'Male',
+      physics:96,
+      maths:100,
+      english:95
+   },
+   {  
+      name:'moorthy',
+      gender:'Male',
+      physics:89,
+      maths:90,
+      english:70
+   },
+   {  
+      name:'raja',
+      gender:'Male',
+      physics:30,
+      maths:25,
+      english:40
+   },
+   {  
+      name:'usha',
+      gender:'Female',
+      physics:67,
+      maths:45,
+      english:78
+   },
+   {  
+      name:'priya',
+      gender:'Female',
+      physics:56,
+      maths:46,
+      english:78
+   },
+   {  
+      name:'Sundar',
+      gender:'Male',
+      physics:12,
+      maths:67,
+      english:67
+   },
+   {  
+      name:'Kavitha',
+      gender:'Female',
+      physics:78,
+      maths:71,
+      english:67
+   },
+   {  
+      name:'Dinesh',
+      gender:'Male',
+      physics:56,
+      maths:45,
+      english:67
+   },
+   {  
+      name:'Hema',
+      gender:'Female',
+      physics:71,
+      maths:90,
+      english:23
+   },
+   {  
+      name:'Gowri',
+      gender:'Female',
+      physics:100,
+      maths:100,
+      english:100
+   },
+   {  
+      name:'Ram',
+      gender:'Male',
+      physics:78,
+      maths:55,
+      english:47
+   },
+   {  
+      name:'Murugan',
+      gender:'Male',
+      physics:34,
+      maths:89,
+      english:78
+   },
+   {  
+      names:'Jenifer',
+      gender:'Female',
+      physics:67,
+      maths:88,
+      english:90
+   }
+ ] 
+ const maleStudents=jambStudents.map((gender)=>{ return gender.jambStudents="male"
+ })
+ console.log(maleStudents)
+
+
+//return a names having Average >=100 for the array of data using map
+const students=[  
+   {  
+      name:'arun',
+      gender:'Male',
+      physics:88,
+      maths:87,
+      english:78
+   },
+   {  
+      name:'rajesh',
+      gender:'Male',
+      physics:96,
+      maths:100,
+      english:95
+   },
+   {  
+      name:'moorthy',
+      gender:'Male',
+      physics:89,
+      maths:90,
+      english:70
+   },
+   {  
+      name:'raja',
+      gender:'Male',
+      physics:30,
+      maths:25,
+      english:40
+   },
+   {  
+      name:'usha',
+      gender:'Female',
+      physics:67,
+      maths:45,
+      english:78
+   },
+   {  
+      name:'priya',
+      gender:'Female',
+      physics:56,
+      maths:46,
+      english:78
+   },
+   {  
+      name:'Sundar',
+      gender:'Male',
+      physics:12,
+      maths:67,
+      english:67
+   },
+   {  
+      name:'Kavitha',
+      gender:'Female',
+      physics:78,
+      maths:71,
+      english:67
+   },
+   {  
+      name:'Dinesh',
+      gender:'Male',
+      physics:56,
+      maths:45,
+      english:67
+   },
+   {  
+      name:'Hema',
+      gender:'Female',
+      physics:71,
+      maths:90,
+      english:23
+   },
+   {  
+      name:'Gowri',
+      gender:'Female',
+      physics:100,
+      maths:100,
+      english:100
+   },
+   {  
+      name:'Ram',
+      gender:'Male',
+      physics:78,
+      maths:55,
+      english:47
+   },
+   {  
+      name:'Murugan',
+      gender:'Male',
+      physics:34,
+      maths:89,
+      english:78
+   },
+   {  
+      name:'Jenifer',
+      gender:'Female',
+      physics:67,
+      maths:88,
+      english:90
+   }
+ ]
+ 
+ const Avg=students.filter((score)=>{
+    return Average=Math.round(((score.physics + score.maths + score.english)/3)>=100)
+   }) 
+    const nameScore=Avg.map((students)=>{
+      return students.name;
+    })
+    
+console.log(nameScore)
+
+//return a filter for Average >=100 for the array of data
+const candidate=[  
+   {  
+      name:'arun',
+      gender:'Male',
+      physics:88,
+      maths:87,
+      english:78
+   },
+   {  
+      name:'rajesh',
+      gender:'Male',
+      physics:96,
+      maths:100,
+      english:95
+   },
+   {  
+      name:'moorthy',
+      gender:'Male',
+      physics:89,
+      maths:90,
+      english:70
+   },
+   {  
+      name:'raja',
+      gender:'Male',
+      physics:30,
+      maths:25,
+      english:40
+   },
+   {  
+      name:'usha',
+      gender:'Female',
+      physics:67,
+      maths:45,
+      english:78
+   },
+   {  
+      name:'priya',
+      gender:'Female',
+      physics:56,
+      maths:46,
+      english:78
+   },
+   {  
+      name:'Sundar',
+      gender:'Male',
+      physics:12,
+      maths:67,
+      english:67
+   },
+   {  
+      name:'Kavitha',
+      gender:'Female',
+      physics:78,
+      maths:71,
+      english:67
+   },
+   {  
+      name:'Dinesh',
+      gender:'Male',
+      physics:56,
+      maths:45,
+      english:67
+   },
+   {  
+      name:'Hema',
+      gender:'Female',
+      physics:71,
+      maths:90,
+      english:23
+   },
+   {  
+      name:'Gowri',
+      gender:'Female',
+      physics:100,
+      maths:100,
+      english:100
+   },
+   {  
+      name:'Ram',
+      gender:'Male',
+      physics:78,
+      maths:55,
+      english:47
+   },
+   {  
+      name:'Murugan',
+      gender:'Male',
+      physics:34,
+      maths:89,
+      english:78
+   },
+   {  
+      name:'Jenifer',
+      gender:'Female',
+      physics:67,
+      maths:88,
+      english:90
+   }
+ ]
+ 
+ const aboveAvg=candidate.filter((score)=>{
+    return Average=Math.round(((score.physics + score.maths + score.english)/3)>=100)
+   })
+console.log(aboveAvg)
+
+
+//using forEach calculate the average of each student
+const candidates=[  
+   {  
+      name:'arun',
+      gender:'Male',
+      physics:88,
+      maths:87,
+      english:78
+   },
+   {  
+      name:'rajesh',
+      gender:'Male',
+      physics:96,
+      maths:100,
+      english:95
+   },
+   {  
+      name:'moorthy',
+      gender:'Male',
+      physics:89,
+      maths:90,
+      english:70
+   },
+   {  
+      name:'raja',
+      gender:'Male',
+      physics:30,
+      maths:25,
+      english:40
+   },
+   {  
+      name:'usha',
+      gender:'Female',
+      physics:67,
+      maths:45,
+      english:78
+   },
+   {  
+      name:'priya',
+      gender:'Female',
+      physics:56,
+      maths:46,
+      english:78
+   },
+   {  
+      name:'Sundar',
+      gender:'Male',
+      physics:12,
+      maths:67,
+      english:67
+   },
+   {  
+      name:'Kavitha',
+      gender:'Female',
+      physics:78,
+      maths:71,
+      english:67
+   },
+   {  
+      name:'Dinesh',
+      gender:'Male',
+      physics:56,
+      maths:45,
+      english:67
+   },
+   {  
+      name:'Hema',
+      gender:'Female',
+      physics:71,
+      maths:90,
+      english:23
+   },
+   {  
+      name:'Gowri',
+      gender:'Female',
+      physics:100,
+      maths:100,
+      english:100
+   },
+   {  
+      name:'Ram',
+      gender:'Male',
+      physics:78,
+      maths:55,
+      english:47
+   },
+   {  
+      name:'Murugan',
+      gender:'Male',
+      physics:34,
+      maths:89,
+      english:78
+   },
+   {  
+      name:'Jenifer',
+      gender:'Female',
+      physics:67,
+      maths:88,
+      english:90
+   }
+]
+const cal=()=>{
+candidates.forEach((score)=>{ 
+Average=Math.round((score.physics + score.maths + score.english)/3)
+console.log(Average)
+})
+}
+cal()
+
+
+
+
+// Using  arrow functions  with personal details and logicial functions && || write an if statement to check
+//if they made payment ,quiz 1 if statment to 
+//check if they made payment, or if their age is above 16 and
+//check if name contians letter A
+
+let Name= "SAMUEL"
+let age=45
+let payment=false
+let fees =()=> {
+if ( payment =false && age >=16 && Name.include("A"))
+ {console.log
+ ("'payment' been checked, your name contains letter 'A' congrats your  'age' is above 15, promoted to grade A")}
+
+else if( payment=true ||age<16 && Name.include("A"))
+ {console.log
+ ("'payment' been checked, your name contains letter 'A',though your 'age' is below 16, grace find you your have promoted to grade B")}
+
+ else if( payment=true && age >16 && Name.include("A"))
+{console.log
+("'payment'checked though half payment,your name contains letter 'A' your  'age' is above 16, promoted to grade C")}
+}
+fees()
+
+
+//Create If or Else statement for scores of student
+const scores =100
+if(scores<=49){console.log("FAILD")}
+else if(scores<=59) {console.log("Good")}
+else if(scores<=69){console.log("Very Good")}
+else if (scores>=70) {console.log("Excellent")}
+
+
+
+
 //(asigment 1.0)
 //group1
 const a=7
@@ -101,38 +677,6 @@ console.log(cars.colorOfCars[2])
 console.log(cars.prodYear[1])
 //only viewed two items follow suit to view model of your choice
 
-
-
-//Create If or Else statement for scores of student
-const scores =100
-if(scores<=49){console.log("FAILD")}
-else if(scores<=59) {console.log("Good")}
-else if(scores<=69){console.log("Very Good")}
-else if (scores>=70) {console.log("Excellent")}
-
-
-// Using  arrow functions  with personal details and logicial functions && || write an if statement to check
-//if they made payment ,quiz 1 if statment to 
-//check if they made payment, or if their age is above 16 and
-//check if name contians letter A
-
-const name= "SAMUEL"
-const age=16
-const payment= "check"
-const fees =()=> {
-if( age >=16 && name.includes("A")&& payment)
- {console.log
- ("payment been 'checked', your name contains letter 'A' congrats your  'age' is above 15, promoted to grade A")}
-
- if( age <16||name.includes("A")&&payment)
- {console.log
- ("payment been'checked', your name contains letter 'A',though your 'age' is below 16, grace find you your have promoted to grade B")}
- 
-if( age >16 && name.includes("A")||payment)
-{console.log
-("payment 'checked'though half payment,your name contains letter 'A' your  'age' is above 16, promoted to grade C")}
-}
-fees()
 
 
 
