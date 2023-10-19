@@ -1,3 +1,29 @@
+//fetch using json
+// let users
+const fetchUsers=async()=>{
+     //const take = await fetch('https://jsonplaceholder.typicode.com/users')
+     // json = await take.json()
+//console.log(json);
+    
+   await fetch('https://jsonplaceholder.typicode.com/users')
+    .then( response=> response.json())
+    .then (userArray => users = userArray)
+   const userDetails =document.querySelector(".people")
+
+ users.forEach((user)=>{
+      userDetails.innerHTML += `
+       <div class="cards"> 
+      <h1 class"name">${user.name }</h1>
+      <h3 class"email">${user.email }</h3>
+      <h4 class"phone">${user.phone }</h4>
+      </div>`
+   
+   })
+}
+fetchUsers()
+
+
+
 // return only female gender using map
 const jambtudents=[  
    {  
