@@ -1,26 +1,50 @@
-//fetch using json
-// let users
-const fetchUsers=async()=>{
-     //const take = await fetch('https://jsonplaceholder.typicode.com/users')
-     // json = await take.json()
-//console.log(json);
-    
-   await fetch('https://jsonplaceholder.typicode.com/users')
+//fetch using sawpi
+let result
+const fetchPeople =async()=>{
+   await fetch('https://Swapi.dev/api/people')
     .then( response=> response.json())
-    .then (userArray => users = userArray)
+    .then (userArray => result=userArray); 
    const userDetails =document.querySelector(".people")
-
- users.forEach((user)=>{
+const record= result.results
+  record.forEach((user)=>{
       userDetails.innerHTML += `
        <div class="cards"> 
-      <h1 class"name">${user.name }</h1>
-      <h3 class"email">${user.email }</h3>
-      <h4 class"phone">${user.phone }</h4>
+      <h1 class"name">Name:${user.name }</h1>
+      <h3 class"height">Height:${user.height }</h3>
+      <h4 classmass">Mass:${user.mass }</h4>
       </div>`
    
    })
 }
-fetchUsers()
+fetchPeople()
+
+
+
+
+
+
+   //const take = await fetch('https://jsonplaceholder.typicode.com/users')
+     // json = await take.json()
+//console.log(json);
+    
+//let users
+
+//const fetchUsers=async()=>{
+  //await fetch('https://jsonplaceholder.typicode.com/users')
+//.then( response=> response.json())
+  //.then (userArray => user= userArray)
+ //const userDetails =document.querySelector(".people")
+ //users.forEach((user)=>{
+   // userDetails.innerHTML += `
+    // <div class="cards"> 
+    //<h1 class"name">${user.name }</h1>
+    // <h3 class"">${user.}</h3>
+     //<h4 class"phone">${user.phone }</h4>
+//</div>`
+   
+  //})
+//}
+//fetchUsers()
 
 
 
@@ -702,8 +726,3 @@ console.log(cars.namesOfCars[1])
 console.log(cars.colorOfCars[2])
 console.log(cars.prodYear[1])
 //only viewed two items follow suit to view model of your choice
-
-
-
-
-
